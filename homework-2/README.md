@@ -177,3 +177,5 @@
             org.apache.kafka.common.errors.TopicAuthorizationException: Not authorized to access topics: [test]
             Processed a total of 0 messages
             ```
+
+[Настройка ssl](./ssl.md)
