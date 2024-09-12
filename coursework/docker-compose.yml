@@ -1,0 +1,6 @@
+services:
+  legacy-db:
+    build: ./legacy-db
+    container_name: legacy-db
+    ports:
+      - 5432:5432
