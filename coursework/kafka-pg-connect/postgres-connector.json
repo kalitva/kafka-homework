@@ -1,0 +1,17 @@
+{
+    "name": "postgres-connector",
+    "config": {
+        "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+        "database.hostname" : "legacy-db",
+        "database.port" : "5432",
+        "database.user": "postgres",
+        "database.password": "postgres",
+        "database.dbname": "dvdrental",
+        "table.whitelist": "public.*",
+        "mode": "timestamp",
+        "timestamp.column.name": "last_update",
+        "topic.prefix": "postgres",
+        "tasks.max": "1",
+        "plugin.name": "pgoutput"
+      }
+ }
